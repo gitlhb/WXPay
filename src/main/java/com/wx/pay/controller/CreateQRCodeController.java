@@ -64,9 +64,9 @@ public class CreateQRCodeController {
 		String sign = TecentPayUtil.createSign("UTF-8", packageParams, ConstantParam.MCH_KEY);
 		req.setSign(sign.toLowerCase());
 		String body = XmlHelper.toXml(req, UnifiedorderRequest.class);
-		System.out.println("request:" + body);
+		System.out.println("CreateQRCodeRequest->:" + body);
 		String responseXML = HttpHelper.sendHttpPost(ConstantParam.UNIFIEDORDER_URL, body, null);
-		System.out.println("response:" + responseXML);
+		System.out.println("CreateQRCodeResponse->:" + responseXML);
 		UnifiedorderResponse res = XmlHelper.toBean(responseXML, UnifiedorderResponse.class);
 		if (Objects.equals("SUCCESS", res.getResult_code())) {
 			ConstantParam.map.put(orderNo, 0);
