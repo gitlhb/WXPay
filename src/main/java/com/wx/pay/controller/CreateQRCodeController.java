@@ -59,7 +59,7 @@ public class CreateQRCodeController {
 		packageParams.put("total_fee", req.getTotal_fee());
 		packageParams.put("trade_type", req.getTrade_type());
 
-		String sign = TecentPayUtil.createSign("UTF-8", packageParams, ConstantParam.MCH_KEY);// MD5��ϣ
+		String sign = TecentPayUtil.createSign("UTF-8", packageParams, ConstantParam.MCH_KEY);
 		req.setSign(sign.toLowerCase());
 		String body = XmlHelper.toXml(req, UnifiedorderRequest.class);
 		System.out.println("request:" + body);
@@ -70,7 +70,6 @@ public class CreateQRCodeController {
 			ConstantParam.map.put(orderNo, 0);
 			Map<EncodeHintType, Object> hints = new HashMap<EncodeHintType, Object>();
 			hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
-			// ָ�������ʽ
 			hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
 			hints.put(EncodeHintType.MARGIN, 1);
 			BitMatrix bitMatrix = new MultiFormatWriter().encode(res.getCode_url(), BarcodeFormat.QR_CODE, 130, 130,
