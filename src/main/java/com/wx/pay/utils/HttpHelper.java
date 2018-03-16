@@ -28,7 +28,7 @@ import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
 
 /**
- * Http´¦ÀíÀà
+ * Httpï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
  * @author liuhongbing
  *
@@ -36,15 +36,15 @@ import org.apache.http.util.EntityUtils;
 public class HttpHelper {
 
 	/**
-	 * ·¢ËÍHttpPostÇëÇó
+	 * ï¿½ï¿½ï¿½ï¿½HttpPostï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param url
-	 *            ÇëÇóµØÖ·
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
 	 * @param body
-	 *            ÏûÏ¢Ìå
+	 *            ï¿½ï¿½Ï¢ï¿½ï¿½
 	 * @param header
-	 *            ÏûÏ¢Í·
-	 * @return ÏìÓ¦
+	 *            ï¿½ï¿½Ï¢Í·
+	 * @return ï¿½ï¿½Ó¦
 	 * @throws Exception
 	 * @throws ClientProtocolException
 	 */
@@ -71,13 +71,13 @@ public class HttpHelper {
 	}
 
 	/**
-	 * Http·¢ËÍGetÇëÇó
+	 * Httpï¿½ï¿½ï¿½ï¿½Getï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param url
-	 *            ÇëÇóµÄurl
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½url
 	 * @param header
-	 *            ÇëÇóÍ·
-	 * @return GetÏìÓ¦
+	 *            ï¿½ï¿½ï¿½ï¿½Í·
+	 * @return Getï¿½ï¿½Ó¦
 	 * @throws ClientProtocolException
 	 * @throws IOException
 	 */
@@ -102,17 +102,17 @@ public class HttpHelper {
 	}
 
 	/**
-	 * ÏòÎ¢ĞÅ·şÎñÆ÷·¢ËÍHTTPSÇëÇó
+	 * ï¿½ï¿½Î¢ï¿½Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HTTPSï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param url
-	 *            ÇëÇóµÄUrl
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½Url
 	 * @param body
-	 *            ÇëÇóÏûÏ¢
-	 * @return ÏìÓ¦ÏûÏ¢
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+	 * @return ï¿½ï¿½Ó¦ï¿½ï¿½Ï¢
 	 * @throws Exception
 	 */
 	public static String sendTecentHttpsPost(String url, String body) throws Exception {
-		String filePath = "E:\\Ö¤Êé\\Î¢Ò½¼¯ÍÅÈ«Á÷³ÌÑĞ·¢\\apiclient_cert.p12";
+		String filePath = "E:\\è¯ä¹¦\\å¾®åŒ»é›†å›¢å…¨æµç¨‹ç ”å‘\\apiclient_cert.p12";
 		KeyStore keyStore = KeyStore.getInstance("PKCS12");
 		FileInputStream in = new FileInputStream(new File(filePath));
 		try {
