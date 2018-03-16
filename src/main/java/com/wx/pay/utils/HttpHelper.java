@@ -102,14 +102,11 @@ public class HttpHelper {
 	}
 
 	/**
-	 * ��΢�ŷ���������HTTPS����
-	 * 
-	 * @param url
-	 *            �����Url
-	 * @param body
-	 *            ������Ϣ
-	 * @return ��Ӧ��Ϣ
-	 * @throws Exception
+	 * 发送HTTP请求
+	 * @param url url
+	 * @param body 请求
+	 * @return 响应
+	 * @throws Exception 异常
 	 */
 	public static String sendTecentHttpsPost(String url, String body) throws Exception {
 		String filePath = "E:\\证书\\微医集团全流程研发\\apiclient_cert.p12";
