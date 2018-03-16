@@ -34,7 +34,7 @@ public class CreateQRCodeController {
 	@RequestMapping(value = "/PayQrCode2", method = RequestMethod.GET)
 	public void createQrCode(HttpServletRequest request, HttpServletResponse response, Map<String, String> map,@RequestParam("orderNo") String orderNo)
 			throws Exception {
-		String amt = "1";
+		String amt = "1";//this is a test amt
 		map.put("orderNo", orderNo);
 		UnifiedorderRequest req = new UnifiedorderRequest();
 		req.setAppid(ConstantParam.APPID);
