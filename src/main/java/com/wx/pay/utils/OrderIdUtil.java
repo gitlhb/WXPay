@@ -7,11 +7,7 @@ import java.util.UUID;
 public final class OrderIdUtil {
 	public static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
-	/**
-	 * 生成一个唯一的订单号
-	 * 
-	 * @return
-	 */
+
 	public final static  String getOrderId() {
 		String date = simpleDateFormat.format(new Date());
 		Integer uuidHashCode = UUID.randomUUID().toString().hashCode();
