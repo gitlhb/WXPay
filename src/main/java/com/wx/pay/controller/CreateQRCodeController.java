@@ -69,7 +69,6 @@ public class CreateQRCodeController {
 		if (Objects.equals("SUCCESS", res.getResult_code())) {
 			ConstantParam.map.put(orderNo, 0);
 			Map<EncodeHintType, Object> hints = new HashMap<EncodeHintType, Object>();
-			// ָ������ȼ�
 			hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
 			// ָ�������ʽ
 			hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
@@ -77,12 +76,12 @@ public class CreateQRCodeController {
 			BitMatrix bitMatrix = new MultiFormatWriter().encode(res.getCode_url(), BarcodeFormat.QR_CODE, 130, 130,
 					hints);
 			OutputStream out = response.getOutputStream();
-			MatrixToImageWriter.writeToStream(bitMatrix, "png", out);// �����ά��
+			MatrixToImageWriter.writeToStream(bitMatrix, "png", out);
 
 			out.flush();
 			out.close();
 		} else {
-			throw new Exception("��ȡʧ��");
+			throw new Exception("Error");
 		}
 	}
 
