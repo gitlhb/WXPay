@@ -28,7 +28,7 @@ import com.wx.pay.utils.HttpHelper;
 import com.wx.pay.utils.TecentPayEnum;
 import com.wx.pay.utils.TecentPayUtil;
 import com.wx.pay.utils.XmlHelper;
-
+/*this is  a  dev fenzhi*/
 @Controller
 public class CreateQRCodeController {
 	@RequestMapping(value = "/PayQrCode2", method = RequestMethod.GET)
