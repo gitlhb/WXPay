@@ -2,12 +2,6 @@ package com.wx.pay.entity.request;
 
 import java.io.Serializable;
 
-/**
- * js请求网页的关闭订单入参
- * 
- * @author liuhongbing
- *
- */
 
 public class CloserOrderJSReq implements Serializable {
 
