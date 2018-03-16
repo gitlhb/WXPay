@@ -27,6 +27,9 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
 
+/**
+ * Http处理类
+ */
 public class HttpHelper {
 
 
