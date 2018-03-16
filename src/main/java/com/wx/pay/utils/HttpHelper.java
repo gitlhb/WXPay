@@ -109,7 +109,7 @@ public class HttpHelper {
 	 * @throws Exception 异常
 	 */
 	public static String sendTecentHttpsPost(String url, String body) throws Exception {
-		String filePath = "E:\\证书\\微医集团全流程研发\\apiclient_cert.p12";
+		String filePath = "E:\\证书\\Crp\\apiclient_cert.p12";
 		KeyStore keyStore = KeyStore.getInstance("PKCS12");
 		FileInputStream in = new FileInputStream(new File(filePath));
 		try {
