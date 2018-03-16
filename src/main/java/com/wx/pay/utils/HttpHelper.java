@@ -27,27 +27,9 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
 
-/**
- * Http������
- * 
- * @author liuhongbing
- *
- */
 public class HttpHelper {
 
-	/**
-	 * ����HttpPost����
-	 * 
-	 * @param url
-	 *            �����ַ
-	 * @param body
-	 *            ��Ϣ��
-	 * @param header
-	 *            ��Ϣͷ
-	 * @return ��Ӧ
-	 * @throws Exception
-	 * @throws ClientProtocolException
-	 */
+
 	public static String sendHttpPost(String url, String body, Map<String, String> header)
 			throws ClientProtocolException, Exception {
 		HttpClient httpClient = HttpClientBuilder.create().build();
@@ -70,17 +52,6 @@ public class HttpHelper {
 
 	}
 
-	/**
-	 * Http����Get����
-	 * 
-	 * @param url
-	 *            �����url
-	 * @param header
-	 *            ����ͷ
-	 * @return Get��Ӧ
-	 * @throws ClientProtocolException
-	 * @throws IOException
-	 */
 	public static String sendHttpGet(String url, Map<String, String> header)
 			throws ClientProtocolException, IOException {
 		String result = "";
